@@ -3,14 +3,18 @@
 <head>
     <title></title>
 	<meta charset="utf-8" />
+    <script src="Scripts/jquery-1.10.2.js"></script>
     <script src="Scripts/angular.js"></script>
     <script src="Controllers/myController.js"></script>
     <script src="App/myApp.js"></script>
+    <script src="Scripts/ng-grid.js"></script>
+    <link href="Content/ng-grid.css" rel="stylesheet" />
+    
 </head>
 <body>
     <div ng-app="myModule" ng-controller="myController">
         {{RoadList}}
-
+        <div ng-grid="RoadList"></div>
     </div>
 </body>
 </html>
