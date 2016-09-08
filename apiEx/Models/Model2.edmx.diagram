@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4127320fc3b247c590312f76fac9b1a4" Name="Diagram1">
+        <EntityTypeShape EntityType="RoadsModel1.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsModel1.tblAct" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsModel1.tblEmp" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsModel1.tblMach" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsModel1.tblOwner" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsModel1.tblRoad" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsModel1.tblTransaction" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsModel1.tblType" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadsModel1.User" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="RoadsModel1.FK__tblTransa__Activ__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsModel1.FK__tblTransa__Emp_N__1A14E395" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsModel1.FK__tblMach__Owner_N__0CBAE877" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsModel1.FK__tblTransa__Mach___1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsModel1.FK__tblRoad__Type_Id__15502E78" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadsModel1.FK__tblTransa__BIA_N__1BFD2C07" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

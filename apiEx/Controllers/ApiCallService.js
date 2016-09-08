@@ -1,9 +1,9 @@
-﻿AnguarModule.service('ApiCall', ['$http', function ($http) {
+﻿myApp.service('ApiCall', ['$http', function ($http) {
     var result;
 
     // This is used for calling get methods from web api
     this.GetApiCall = function (controllerName, methodName) {
-        result = $http.get('api/' + controllerName + '/' + methodName).success(function (data, status) {
+        result = $http.get(controllerName + '/' + methodName).success(function (data, status) {
             result = (data);
         }).error(function () {
             alert("Something went wrong");

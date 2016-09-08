@@ -1,6 +1,6 @@
-﻿var myController = function ($scope, $http) {
-    var result = ApiCall.GetApiCall("tblRoads", "GettblRoads").success(function (data) {
-        var data = $.parseJSON(JSON.parse(data));
+﻿var myController = function ($scope, $http, ApiCall) {
+    var result = ApiCall.GetApiCall("api", "tblRoads").success(function (data) {
+        //var data = $.parseJSON(JSON.parse(data));
         $scope.RoadList = data;
     });
 
