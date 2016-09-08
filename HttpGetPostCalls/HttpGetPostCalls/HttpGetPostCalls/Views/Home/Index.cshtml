@@ -1,0 +1,32 @@
+﻿<script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/AngularControllers/AngularCotroller.js"></script>
+<script src="~/Scripts/AngularServices/ApiCallService.js"></script>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+
+
+
+@* //Angular app (ng-app) decleration*@
+<div ng-app="App">
+    @*Angular controller (ng-controller) decleration*@
+    <div style="padding:25px;" class="panel-body" ng-controller="AppController">
+        <p class="bg-primary"><span>{{message}}</span></p>
+        <br />
+        @*Loading Dropdown on page load event by using angular http get call*@
+        <div class="col-md-12">
+            <div class="form-group row">
+                <div class="col-sm-4" style="padding-right: 0;">
+                    <select style="padding: 3px 3px" class="form-control" ng-model="State" ng-options="State.stateName for State  in StateList">
+                        <option value="">Select State</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="col-md-12">
+            @*Send data from angular controller to web api using angular http post call*@
+            <div class="form-group row">
+                <button id="btnPostCall" class="btn btn-default" ng-click="btnPostCall()">Post API</button>
+            </div>
+        </div>
+    </div>
+</div>
